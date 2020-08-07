@@ -25,7 +25,7 @@ public class RightTriangle{
   }
 
   /**
-   * Sets the base of the right triangle to the specified length. This also changes the length of the hypotenuse of the triangle, but not the height.
+   * Sets the base of the right triangle to the specified length. This also changes the length of the hypotenuse of the triangle, but not the height. Calling this method with a non-positive parameter does nothing.
    * @param bs the proposed new base. This should be a positive number.
    */
   public void setBase(double bs){
@@ -34,7 +34,7 @@ public class RightTriangle{
   }
 
   /**
-   * Sets the height of the right triangle to the specified length. This also changes the length of the hypotenuse of the triangle, but not the height.
+   * Sets the height of the right triangle to the specified length. This also changes the length of the hypotenuse of the triangle, but not the base. Calling this method with a non-positive parameter does nothing.
    * @param ht the proposed new height. This should be a positive number.
    */
   public void setHeight(double ht){
@@ -43,8 +43,8 @@ public class RightTriangle{
   }
 
   /**
-   *  Used to get the height of the right triangle as a <code>double</code>.
-   *  @return the height of the right triangle.
+   *  Used to get the base of the right triangle as a <code>double</code>.
+   *  @return the base of the right triangle.
    */
   public double getBase(){
     return base;
